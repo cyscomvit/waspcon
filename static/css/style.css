@@ -1,0 +1,451 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); /*font-family: 'Poppins', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap'); /*font-family: 'Kanit', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+
+
+
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+
+
+/* ///////////////////////////////////////Scroll bar \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.scrollBar::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .scrollBar::-webkit-scrollbar-thumb {
+    background: #160380;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #190A05, #160380);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #190A05, #160380); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  .scrollBar::-webkit-scrollbar-thumb:hover {
+    background: #160380;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #190A05, #160380);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #190A05, #160380); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+
+
+/* ///////////////////////////////////////////////////////////////navbar\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+logo img{
+  max-height:100px;
+  background-color:transparent;
+}
+.navbar-custom{
+  position: absolute;
+  z-index: 2;
+  /* padding-left: 4rem; */
+}
+
+/* //////////////////  Intro heading \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */  
+
+#intro-head{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  text-align: center;
+    /* position: absolute; */
+    font-size: 6rem;
+    /* z-index: 3; */
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+} 
+
+@media screen and (max-width:400px) {
+  #intro-head{
+    font-size: 4rem;
+  }  
+}
+   
+  /* Now we are going to import the animation and the animation color after
+  Hover */
+ #intro-head{
+    color: #fff;
+    font-family: Raleway;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate; 
+  /*   This neon1 is the function for the color change */
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+    font-family:"Monoton";
+   
+  }
+  /* This is the function that causes keyframe animation */
+  @-webkit-keyframes neon1 {
+  /*   This from means the animation starts from here */
+    from {
+      text-shadow: 0 0 5px rgb(179, 174, 174), 0 0 10px rgb(3, 230, 247), 0 0 15px #1427d1, 0 0 20px #09bbe7, 0 0 25px #0082fc, 0 0 30px #06006f, 0 0 35px #1511ff, 0 0 150px #130d64;
+    }
+    to {
+      text-shadow: 0 0 5px rgb(179, 174, 174), 0 0 10px rgb(3, 230, 247), 0 0 15px rgb(20, 39, 209), 0 0 20px #09bbe7, 0 0 35px #0082fc, 0 0 40px #06006f, 0 0 50px #1511ff, 0 0 75px #130d64;
+    }
+  }
+
+
+
+
+
+
+/* ///////////////////////////////////////Intro button \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+.btn-intro a{
+	color: #01b7ff;
+	display: inline-block;
+	font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+	letter-spacing: 4px;
+	margin: 20px 40px;
+	padding: 24px 30px;
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.5s;
+	-webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+.btn-intro a:hover{
+	background: #01eeff;
+	box-shadow: 0 0 5px #03E9F4, 0 0 25px #0394f4, 0 0 50px #0357f4, 0 0 200px #022380;
+	color: #050801;
+}
+
+.btn-intro a span{
+	display: block;
+	position: absolute;
+}
+
+.btn-intro a span:nth-child(1){
+	animation: animate1 1s linear infinite;
+	background: linear-gradient(90deg, transparent, #01eeff);
+	height: 2px;
+	left: -100%;
+	top: 0;
+	width: 100%;
+}
+
+@keyframes animate1{
+	0%{
+		left: -100%;
+	}
+	50%, 100%{
+		left: 100%;	
+	}
+}
+
+.btn-intro a span:nth-child(2){
+	animation: animate2 1s linear infinite;
+	animation-delay: 0.25s;
+	background: linear-gradient(180deg, transparent, #01eeff);
+	height: 100%;
+	top: -100%;
+	right: 0;
+	width: 2px;
+}
+
+@keyframes animate2{
+	0%{
+		top: -100%;
+	}
+	50%, 100%{
+		top: 100%;	
+	}
+}
+
+.btn-intro a span:nth-child(3){
+	animation: animate3 1s linear infinite;
+	animation-delay: 0.5s;
+	background: linear-gradient(270deg, transparent, #01eeff);
+	bottom: 0;
+	height: 2px;
+	right: -100%;
+	width: 100%;
+}
+
+@keyframes animate3{
+	0%{
+		right: -100%;
+	}
+	50%, 100%{
+		right: 100%;	
+	}
+}
+
+.btn-intro a span:nth-child(4){
+	animation: animate4 1s linear infinite;
+	animation-delay: 0.75s;
+	background: linear-gradient(360deg, transparent, #01eeff);
+	bottom: -100%;
+	height: 100%;
+	left: 0;
+	width: 2px;
+}
+
+@keyframes animate4{
+	0%{
+		bottom: -100%;
+	}
+	50%, 100%{
+		bottom: 100%;	
+	}
+}
+
+
+
+.btn-intro{
+  position: absolute;
+  z-index: 2;
+  top:70%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.btn-intro a{
+  text-decoration: none;
+}
+
+
+
+.intro{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.intro video{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+  /* /////////////////////////////// S E C T I O N \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+section{
+  color:white;
+  background-color: black;
+}
+
+.cnt-head1{
+  text-align: center;
+}
+
+.cnt-desc{
+  text-align: justify;
+  padding: 2rem;
+}
+
+
+
+/* //////////////////// T I M E L I N E \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* The actual timeline (the vertical ruler) */
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+
+/* Container around content */
+
+.container1 {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+
+/* The circles on the timeline */
+
+.container1::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: whitesmoke;
+  border: 4px solid black;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+
+/* Place the container to the left */
+
+.left {
+  left: 0;
+}
+
+
+/* Place the container to the right */
+
+.right {
+  left: 50%;
+}
+
+
+/* Add arrows to the left container (pointing right) */
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid rgb(25, 0, 255);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent rgb(36, 3, 3);
+}
+
+
+/* Add arrows to the right container (pointing left) */
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid rgb(0, 38, 255);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgb(0, 0, 0) transparent transparent;
+}
+
+
+/* Fix the circle for containers on the right side */
+
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+
+.content {
+  padding: 20px 30px;
+  background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  position: relative;
+  border-radius: 6px;
+}
+
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+      left: 31px;
+  }
+  /* Full-width containers */
+  .container1 {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+  }
+  /* Make sure that all arrows are pointing leftwards */
+  .container1::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+  }
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+      left: 15px;
+  }
+  /* Make all right containers behave like the left ones */
+  .right {
+      left: 0%;
+  }
+}
+
+
+
+
+
+
+
+  /* ////////////////////// F O O T E R \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+  footer{
+    color:#00b7ff;
+    background-color: rgb(0, 0, 0);
+    /* text-align:center; */
+    padding: 2rem;
+}
+
+.links{
+  text-align: center;
+}
+
+footer ul{
+    /* list-style: none; */
+    display:block;
+}
+
+footer li{
+    display:inline-block;
+}
+
+.social-media-links i{
+    margin:3rem;
+    color:#00b7ff;
+}
+
+
+@media screen and (max-width:400px) {
+
+  .social-media-links i{
+    margin:2rem;
+    text-align: center;
+}
+  
+}
