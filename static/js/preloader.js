@@ -38,7 +38,7 @@ var strings = [
 ];
 
 var preloader = document.getElementById('preloader');
-var delay = 1000;
+var delay = 200;
 var count = 0;
 var repeat = 0;
 
@@ -51,24 +51,24 @@ function addLog() {
   count++;
   
   if (repeat == 0) {
-    if (count > 3) {
-      delay = 300;
+    if (count > 2) {
+      delay = 150;
     }
     
-    if (count > 6) {
-      delay = 100;
+    if (count > 5) {
+      delay = 120;
     }
     
     if (count > 8) {
-      delay = 50;
+      delay = 40;
     }
     
     if (count > 10) {
-      delay = 10;
+      delay = 5;
     }
   } else {
     if (count > 3) {
-      delay = 10;
+      delay = 13;
     }
   }
   
@@ -98,7 +98,7 @@ function createLog(type, index) {
   if(index == null) 
   {
     var preloader = $('#preloader');
-    jQuery(preloader).fadeOut("slow");
+    jQuery(preloader).fadeOut("fast");
     jQuery("#maincontent").fadeIn("slow");
   }
   
