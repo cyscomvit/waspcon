@@ -115,7 +115,7 @@ logo img{
 	padding: 24px 30px;
 	position: relative;
 	overflow: hidden;
-	text-decoration: none;
+	text-decoration: none !important; 
 	text-transform: uppercase;
 	transition: 0.5s;
 	-webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
