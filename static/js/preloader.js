@@ -99,7 +99,7 @@ function createLog(type, index) {
   {
     var preloader = $('#preloader');
     jQuery(preloader).fadeOut("slow");
-    jQuery("#main").fadeIn("slow");
+    jQuery("#maincontent").fadeIn("slow");
   }
   
   var spanMessage = document.createElement('span');

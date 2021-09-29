@@ -4,6 +4,14 @@
     letter-spacing: 0.125em;
 }
 
+body {
+    /* background-image: url(../images/bg.png); */
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 350px;
+    background-color: #00040d;
+}
 
 #preloader {
     width: 100%;
@@ -47,6 +55,6 @@ span.fail:after {
     content: ']';
 }
 
-#main {
+#maincontent {
     display: none;
 }
