@@ -34,7 +34,7 @@ var strings = [
   "Page rendered",
   "Starting display manager",
   "Initializing...",
-  "Welcome TO WaspCTF 2021!"
+  "Welcome to WaspCTF 2021!"
 ];
 
 var preloader = document.getElementById('preloader');
