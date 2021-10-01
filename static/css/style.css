@@ -4,16 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap'); /*font-family: 'Kanit', sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
 
-
-
-
-
 *{
   padding:0;
   margin:0;
   box-sizing: border-box;
 }
-
 
 
 /* ///////////////////////////////////////Scroll bar \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
@@ -97,11 +92,6 @@ logo img{
       text-shadow: 0 0 5px rgb(179, 174, 174), 0 0 10px rgb(3, 230, 247), 0 0 15px rgb(20, 39, 209), 0 0 20px #09bbe7, 0 0 35px #0082fc, 0 0 40px #06006f, 0 0 50px #1511ff, 0 0 75px #130d64;
     }
   }
-
-
-
-
-
 
 /* ///////////////////////////////////////Intro button \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
@@ -240,14 +230,6 @@ logo img{
     height: 100%;
     object-fit: cover;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -509,15 +491,8 @@ background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, F
   line-height: 1.5;
   margin-bottom: 1.25rem;    
   font-weight: 400;
-  text-align: justify;
+  text-align: center;
 }
-
-
-
-
-
-
-
 
   /* ////////////////////// F O O T E R \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
