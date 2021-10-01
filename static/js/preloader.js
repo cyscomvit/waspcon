@@ -1,5 +1,5 @@
 var strings = [
-  "Starting connection to WaspCTF",
+  "Starting connection to WaspCON",
   "Resolving owaspvit.com",
   "Requesting access to server",
   "Entering credentials",
@@ -15,7 +15,7 @@ var strings = [
   "Enabling /etc/fstab swaps",
   "INIT: Entering runlevel 3",
   "Checking for hardware changes",
-  "Connecting to WaspCTF server",
+  "Connecting to WaspCON server",
   "Connected to backend service",
   "Finding CTF database services",
   "Services found on port 3306",
@@ -34,7 +34,7 @@ var strings = [
   "Page rendered",
   "Starting display manager",
   "Initializing...",
-  "Welcome to WaspCTF 2021!"
+  "Welcome to WaspCON 2021!"
 ];
 
 var preloader = document.getElementById('preloader');
