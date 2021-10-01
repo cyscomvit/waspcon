@@ -209,15 +209,42 @@ logo img{
 
 
 .btn-intro{
-  position: absolute;
+  /* position: absolute; */
   z-index: 2;
-  top:70%;
+  top:80%;
   left:50%;
-  transform: translate(-50%,-50%);
+  /* padding: 20rem; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+
+@media screen and (min-width:400px) {
+  .btn-intro{
+    transform: translate(0%,-175%);
+  }
+}
+
 
 .btn-intro a{
   text-decoration: none;
+  display: inline-block;
+  /* flex-direction: column; */
+}
+
+
+@media screen and (max-width:400px) {
+
+  
+  .btn-intro {
+    flex-direction: column ;
+    text-align: center;
+  }
+  
+  .btn-intro a{
+    font-size: 1rem;
+  }
+
 }
 
 
@@ -240,14 +267,6 @@ logo img{
     height: 100%;
     object-fit: cover;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -284,7 +303,7 @@ section{
   content: '';
   position: absolute;
   width: 6px;
-  background-color: rgb(173, 28, 28);
+  background-color: rgb(255, 255, 255);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -523,6 +542,9 @@ footer{
     /* padding: 1rem; */
 }
 
+ul{
+  padding-left: 0px !important;
+}
 
 footer ul{
     list-style: none;
