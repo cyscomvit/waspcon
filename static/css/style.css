@@ -432,7 +432,6 @@ background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, F
   margin-bottom: 10rem;
 }
 
-/*  cards */
 /* cards */
 .main{
   max-width: 1200px;
@@ -464,18 +463,23 @@ background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, F
 
 .cards_item {
   display: flex;
-  padding: 1rem;
+  padding: 5rem;
 }
 
 @media (min-width: 40rem) {
   .cards_item {
-    width: 25%;
+    width: 33%;
   }
 }
 
-@media (min-width: 56rem) {
-  .cards_item {
-    width: 25%;
+.cards_item_marketing {
+  display: flex;
+  margin: auto;
+}
+
+@media (min-width: 40rem) {
+  .cards_item_marketing {
+    width: 33%;
   }
 }
 
