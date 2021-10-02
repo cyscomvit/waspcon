@@ -204,7 +204,7 @@ logo img{
   justify-content: center;
 }
 
-@media screen and (min-width:400px) {
+@media screen and (min-width:600px) {
   .btn-intro{
     transform: translate(0%,-175%);
   }
@@ -218,7 +218,7 @@ logo img{
 }
 
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:600px) {
 
   
   .btn-intro {
