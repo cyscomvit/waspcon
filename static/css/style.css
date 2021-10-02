@@ -64,11 +64,6 @@ logo img{
     transition: all 0.5s;
 } 
 
-@media screen and (max-width:400px) {
-  #intro-head{
-    font-size: 3rem;
-  }  
-}
    
   /* Now we are going to import the animation and the animation color after
   Hover */
@@ -271,7 +266,7 @@ section{
 }
 
 .cnt-desc{
-  text-align: justify;
+  text-align: center;
   padding: 2rem;
 }
 
@@ -557,7 +552,16 @@ footer li{
 
 
 @media screen and (max-width:400px) {
+  #intro-head{
+    font-size: 1.7rem;
+  }  
+}
 
+@media screen and (min-width:400px) and (max-width:600px) {
+  #intro-head{
+    font-size: 2rem;
+  }  
+}
   .social-media-links i{
     padding: 2rem;
     margin: 1rem;
