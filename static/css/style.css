@@ -464,6 +464,7 @@ background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, F
 .cards_item {
   display: flex;
   padding: 5rem;
+  margin: auto;
 }
 
 @media (min-width: 40rem) {
