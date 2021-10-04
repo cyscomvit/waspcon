@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    overflow-y: hidden;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    height: 350px;
+    width: 500px;
+}
+#button {
+    z-index: 2;
+    top: 0 !important;
+    left: 0 !important;
+    /* padding: 20rem; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#button a {
+    margin: 0 !important;
+    position: relative;
+    top: 200px;
+}
