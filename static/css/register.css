@@ -1,21 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); /*font-family: 'Poppins', sans-serif;*/
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+    color: #fff;
+    font-family: Poppins;
 }
 body {
     height: 100vh;
-    overflow-y: hidden;
+    
     background-color: black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    padding-top: 150px;
     align-items: center;
+    width: 100%;
 }
-img {
-    height: 350px;
-    width: 500px;
+#logo {
+    position: absolute;
+    
+    top: 0px;
+    left: 0;
+    
+}
+#logo img {
+    width: 200px;
+}
+#main {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #0394f4;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Poppins;
+    font-size: clamp(2.6rem, 4.3vw, 4.1rem);
 }
 #button {
     z-index: 2;
@@ -29,5 +51,61 @@ img {
 #button a {
     margin: 0 !important;
     position: relative;
-    top: 200px;
+    top: 180px;
 }
+#video {
+    height: 60%;
+    width: 80%;
+}
+.btn-intro{
+    transform: translate(0%,-75%);
+}
+#heading {
+    color: #fff;
+    font-family: Poppins;
+    padding-bottom: 20px;
+    font-size: clamp(0.8rem, 1.9vw, 1.8rem);
+}
+.footer {
+    margin-top: 80px;
+    padding: 10px 10px;   
+}
+.footer p {
+    font-family: Poppins;
+    color: gray;
+    font-size: clamp(0.8rem, 1.1vw, 1rem);
+}
+ul li {
+    color: gray;
+    font-size: clamp(0.8rem, 1.1vw, 1rem);
+}
+@media screen and (max-width: 600px){
+    .btn-intro {
+        transform: translate(0%, -175%);
+    }
+    #logo img {
+        width: 100px;
+    }
+    #video {
+        height: 30%;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 360px) {
+    #video {
+        height: 35%;
+        width: 80%;
+    }
+    #logo img {
+        width: 50px;
+    }
+}
+@media screen and (max-width: 320px) {
+    #video {
+        height: 30%;
+    }
+    #logo img {
+        width: 75px;
+    }
+}
+
