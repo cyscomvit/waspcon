@@ -25,7 +25,8 @@ body {
     
 }
 #logo img {
-    width: 200px;
+    width: 100px;
+    margin: 5px;
 }
 #main {
     position: absolute;
@@ -84,7 +85,7 @@ ul li {
         transform: translate(0%, -175%);
     }
     #logo img {
-        width: 100px;
+        width: 70px;
     }
     #video {
         height: 30%;
@@ -105,7 +106,7 @@ ul li {
         height: 30%;
     }
     #logo img {
-        width: 75px;
+        width: 30px;
     }
 }
 
