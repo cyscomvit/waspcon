@@ -1,2 +1,3 @@
-# waspctf
-Repo for the WaspCTF Static Site
+## WASPCON
+Repository for the WASPCON website conducted by OWASP VIT Student Chapter.
+
